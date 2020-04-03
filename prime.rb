@@ -1,7 +1,3 @@
 def prime?(num)
-  if num.prime?()
-    TRUE
-  else
-    FALSE
-   end
+  num.any? {|x| num % x == 0} 
 end
